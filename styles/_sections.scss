@@ -1,9 +1,22 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     position: relative;
 }
 
+html body {
+    min-height: 100vh;
+    max-width: 900px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+html {
+    background-image: url(../images/Fondo\ web.jpg);
+    background-attachment: fixed;
+}
 
 header {
     background-color: rgb(0, 0, 0);
@@ -32,9 +45,10 @@ aside {
 
 
 aside:hover {
-    height: 510px; width: 510px;
+    height: 300px; width: 300px;
     padding: 20px;
     background-color: black;
+    
 }
 
 footer {
