@@ -77,3 +77,22 @@ body #contacto__page {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    #videojuegos {
+        min-height: 100vh;
+        width: 100%;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "section section section"
+            "section section section"
+            "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 1fr 3fr 3fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        background-color: black;
+       
+    }
+}
+

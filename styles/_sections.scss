@@ -8,7 +8,7 @@
 html body {
     min-height: 100vh;
     max-width: 900px;
-    background-color: aliceblue;
+    background-color: rgb(206, 119, 119);
     margin: 0 auto;
     justify-content: center;
 }
@@ -33,6 +33,20 @@ header {
 section {
     background-color: rgb(255, 255, 255);
     grid-area: section-2;
+}
+
+#videojuegos #Warzone {
+    background-color: aliceblue;
+    grid-area: section;
+    margin: auto;
+    padding: auto;
+}
+
+#videojuegos #PUBG {
+    background-color: aliceblue;
+    grid-area: section;
+    margin: auto;
+    padding: auto;
 }
 
 aside {
@@ -94,6 +108,7 @@ li {
 #Navbar {
     z-index: 1;
     margin: auto;
+    justify-content: center;
 }
 
 .card-header {
