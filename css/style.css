@@ -105,6 +105,31 @@ li {
   background: radial-gradient(ellipse 20px 10px, rgb(250, 245, 245), rgb(24, 155, 79));
 }
 
+#videojuegos section .warzone {
+  background-color: aliceblue;
+  grid-area: div;
+}
+#videojuegos section .pubg {
+  background-color: aliceblue;
+  grid-area: div;
+}
+#videojuegos section .overwatch {
+  background-color: aliceblue;
+  grid-area: div;
+}
+#videojuegos section .left4dead2 {
+  background-color: aliceblue;
+  grid-area: div;
+}
+#videojuegos section .payday2 {
+  background-color: aliceblue;
+  grid-area: div;
+}
+#videojuegos section .ageofempires2 {
+  background-color: aliceblue;
+  grid-area: div;
+}
+
 body {
   display: grid;
   flex-direction: row;
@@ -128,46 +153,40 @@ body {
     row-gap: 10px;
     column-gap: 10px;
   }
+  #radio {
+    display: grid;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1024px) {
   body {
     min-height: 100vh;
     width: 100%;
-    grid-template-areas: "header header" "nav nav" "section-1  aside" "section-2  aside" "footer     footer";
+    grid-template-areas: "header header" "nav nav" "section-1  aside" "section-2  section-2" "footer     footer";
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 100px 75px auto auto auto;
     row-gap: 20px;
     column-gap: 20px;
   }
-}
-@media screen and (min-width: 1024px) {
-  #videojuegos {
-    min-height: 100vh;
-    width: 100%;
-    grid-template-areas: "header header header" "nav nav nav" "section section section" "footer footer footer";
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 100px 75px auto auto;
-    row-gap: 20px;
-    column-gap: 20px;
-    background-color: rgb(206, 119, 119);
-  }
-  section {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 20px;
-  }
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  .warzone {
-    grid-column: 1;
-    grid-row: 1;
+  #radio {
+    display: block;
   }
 }
+#videojuegos body {
+  display: grid;
+  grid-template-areas: "header" "nav" "section-2" "footer";
+  grid-template-columns: auto;
+  grid-template-rows: 100px 75px auto auto;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+#videojuegos body section {
+  display: grid;
+  grid-template-areas: "div" "div" "div" "div" "div" "div";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
 p {
   width: 100%;
   font-size: medium;
