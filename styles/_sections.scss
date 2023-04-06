@@ -21,12 +21,14 @@ html {
 header {
     background-color: rgb(0, 0, 0);
     grid-area: header;
-    
+    margin-top: 0px;
+    align-content: center;
 }
 
 #Destacados {
     background-color: rgb(255, 255, 255);
     grid-area: section-1;
+    padding: 10px;
 
 }
 
@@ -35,34 +37,19 @@ section {
     grid-area: section-2;
 }
 
-#videojuegos #Warzone {
-    background-color: aliceblue;
-    grid-area: section;
-    margin: auto;
-    padding: auto;
-}
-
-#videojuegos #PUBG {
-    background-color: aliceblue;
-    grid-area: section;
-    margin: auto;
-    padding: auto;
-}
-
 aside {
     background-color: rgb(255, 255, 255);
     grid-area: aside;
     position: relative;
-    transition: all .5s; 
+    transition: all .5s;
 }
 
-
-
 aside:hover {
-    height: 300px; width: 300px;
+    height: 300px;
+    width: 300px;
     padding: 20px;
     background-color: black;
-    
+
 }
 
 footer {
@@ -83,7 +70,7 @@ button {
 }
 
 button {
-    @extend button ;
+    @extend button;
     background-color: black;
     color: red;
 }
@@ -109,6 +96,9 @@ li {
     z-index: 1;
     margin: auto;
     justify-content: center;
+    padding: 5px;
+    grid-column: 1/2;
+
 }
 
 .card-header {
@@ -116,6 +106,7 @@ li {
 }
 
 .btn-primary {
-    background: radial-gradient(ellipse 20px 10px, rgb(250, 245, 245), rgb(24, 155, 79) 
-    );
+    background: radial-gradient(ellipse 20px 10px, rgb(250, 245, 245), rgb(24, 155, 79));
 }
+
+

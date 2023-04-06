@@ -18,28 +18,9 @@ body {
         "section-2"
         "footer";
     grid-template-columns: auto;
-    grid-template-rows: 100px 75px auto 2fr 1fr 10%;
+    grid-template-rows: 100px 75px auto auto auto auto;
     row-gap: 5px;
     column-gap: 5px;
-    
-}
-
-
-body #contacto__page {
-    display: grid;
-    grid-template-areas: 
-        "header"
-        "nav"
-        "contacto-1"
-        "text-contacto-1"
-        "contacto-2"
-        "tex-contacto-2"
-        "Datos-contacto"
-        "footer";
-        grid-template-columns: auto;
-        grid-template-rows: 100px 75px 1fr 1fr 1fr 1fr 1fr 1fr;
-        row-gap: 5px;
-        column-gap: 5px;
 
 }
 
@@ -53,7 +34,7 @@ body #contacto__page {
             "section-2"
             "footer";
         grid-template-columns: auto;
-        grid-template-rows: 100px 1fr 3fr 2fr 10%;
+        grid-template-rows: 100px 75px auto auto auto auto;
         row-gap: 10px;
         column-gap: 10px;
     }
@@ -70,10 +51,10 @@ body #contacto__page {
             "section-2  aside"
             "footer     footer";
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 100px 1fr 3fr 2fr 1fr;
+        grid-template-rows: 100px 75px auto auto auto;
         row-gap: 20px;
         column-gap: 20px;
-       
+
     }
 }
 
@@ -85,14 +66,30 @@ body #contacto__page {
             "header header header"
             "nav nav nav"
             "section section section"
-            "section section section"
             "footer footer footer";
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 100px 1fr 3fr 3fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 100px 75px auto auto;
         row-gap: 20px;
         column-gap: 20px;
-        background-color: black;
-       
+        background-color: rgb(206, 119, 119);
+    }
+
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .warzone {
+        grid-column: 1;
+        grid-row: 1;
     }
 }
-
