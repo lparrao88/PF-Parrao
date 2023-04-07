@@ -8,7 +8,7 @@
 html body {
     min-height: 100vh;
     max-width: 900px;
-    background-color: rgb(206, 119, 119);
+    background-color: rgb(20, 3, 46);
     margin: 0 auto;
     justify-content: center;
 }
@@ -22,58 +22,55 @@ header {
     background-color: rgb(255, 255, 255);
     grid-area: header;
     margin-top: 0px;
-    align-content: center;
 }
 
 #Destacados {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(20, 3, 46);
     grid-area: section-1;
     padding: 10px;
 
 }
 
 section {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(20, 3, 46);
     grid-area: section-2;
     margin: 5px;
 }
 
 aside {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(20, 3, 46);
     grid-area: aside;
-    position: relative;
     padding: 10px;
     margin-right: 5px;
 }
 
 footer {
-    background-color: white;
+    background-color: rgb(20, 3, 45);
     grid-area: footer;
     text-align: center;
     margin: 5px;
+
 }
 
+
 button {
-    background-color: black;
+    @extend button;
+    background-color: rgb(20, 3, 46);
     cursor: pointer;
     padding: 10px 12px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
     position: relative;
     border-radius: 2px;
-}
 
-button {
-    @extend button;
-    background-color: black;
-    color: red;
+
 }
 
 .redes {
     position: relative;
     bottom: 150px;
-    right: 40px;
+    right: 50px;
     position: fixed;
     width: 50px;
     height: 50px;
@@ -89,10 +86,8 @@ li {
 
 #Navbar {
     z-index: 1;
-    margin: auto;
-    justify-content: center;
-    padding: 5px;
-    grid-column: 1/2;
+    margin: 1px auto;
+    position: relative;
 
 
 }
@@ -101,32 +96,33 @@ li {
     background: linear-gradient(to left, blue, rgb(238, 235, 235));
 }
 
- .btn-primary {
+.btn-primary {
     background: radial-gradient(ellipse 20px 10px, rgb(250, 245, 245), rgb(24, 155, 79));
-    
 }
 
-
-
 #contacto {
-    body {
-        height: 100%;
-        font-family: 'Noto Sans', sans-serif;
-        background-color: #ab4493;
-    }
+    width: 600px;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 30px;
 
 
-    .contact_form {
-        width: 460px;
-        height: auto;
-        margin: 80px auto;
-        border-radius: 10px;
-        padding-top: 30px;
-        padding-bottom: 20px;
+    select {
         background-color: #fbfbfb;
-        padding-left: 30px;
+        width: 408px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #ab4493;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
     }
-
 
     input {
         background-color: #fbfbfb;
@@ -237,3 +233,20 @@ li {
         border: 1px solid #97d848;
     }
 }
+
+.card {
+    padding: 1px;
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgb(21, 11, 46),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+}
+
+.maps {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+}
+

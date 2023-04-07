@@ -8,7 +8,7 @@
 html body {
   min-height: 100vh;
   max-width: 900px;
-  background-color: rgb(206, 119, 119);
+  background-color: rgb(20, 3, 46);
   margin: 0 auto;
   justify-content: center;
 }
@@ -22,56 +22,49 @@ header {
   background-color: rgb(255, 255, 255);
   grid-area: header;
   margin-top: 0px;
-  align-content: center;
 }
 
 #Destacados {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(20, 3, 46);
   grid-area: section-1;
   padding: 10px;
 }
 
 section {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(20, 3, 46);
   grid-area: section-2;
   margin: 5px;
 }
 
 aside {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(20, 3, 46);
   grid-area: aside;
-  position: relative;
   padding: 10px;
   margin-right: 5px;
 }
 
 footer {
-  background-color: white;
+  background-color: rgb(20, 3, 45);
   grid-area: footer;
   text-align: center;
   margin: 5px;
 }
 
 button {
-  background-color: black;
+  background-color: rgb(20, 3, 46);
   cursor: pointer;
   padding: 10px 12px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: bold;
   position: relative;
   border-radius: 2px;
 }
 
-button {
-  background-color: black;
-  color: red;
-}
-
 .redes {
   position: relative;
   bottom: 150px;
-  right: 40px;
+  right: 50px;
   position: fixed;
   width: 50px;
   height: 50px;
@@ -87,10 +80,8 @@ li {
 
 #Navbar {
   z-index: 1;
-  margin: auto;
-  justify-content: center;
-  padding: 5px;
-  grid-column: 1/2;
+  margin: 1px auto;
+  position: relative;
 }
 
 .card-header {
@@ -101,20 +92,27 @@ li {
   background: radial-gradient(ellipse 20px 10px, rgb(250, 245, 245), rgb(24, 155, 79));
 }
 
-#contacto body {
-  height: 100%;
-  font-family: "Noto Sans", sans-serif;
-  background-color: #ab4493;
-}
-#contacto .contact_form {
-  width: 460px;
+#contacto {
+  width: 600px;
   height: auto;
-  margin: 80px auto;
+  margin: 30px auto;
   border-radius: 10px;
   padding-top: 30px;
   padding-bottom: 20px;
   background-color: #fbfbfb;
   padding-left: 30px;
+}
+#contacto select {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ab4493;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
 }
 #contacto input {
   background-color: #fbfbfb;
@@ -199,6 +197,18 @@ li {
   border: 1px solid #97d848;
 }
 
+.card {
+  padding: 1px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 1px rgb(21, 11, 46), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.maps {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ab4493;
+}
+
 body {
   display: grid;
   flex-direction: row;
@@ -213,6 +223,19 @@ body {
   row-gap: 5px;
   column-gap: 5px;
 }
+body aside .card {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body header {
+  background-color: rgb(20, 3, 46);
+}
+body nav {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 @media screen and (min-width: 768px) {
   body {
@@ -222,9 +245,24 @@ body {
     row-gap: 10px;
     column-gap: 10px;
   }
-  #radio {
-    display: grid;
-    justify-content: center;
+  aside .card {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .apodo {
+    top: -400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 2px blue;
+  }
+  .col-md-8 .card-body {
+    width: 400px;
+    height: 160px;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -237,8 +275,22 @@ body {
     row-gap: 20px;
     column-gap: 20px;
   }
-  #radio {
-    display: block;
+  body header {
+    background-color: rgb(255, 255, 255);
+  }
+  body .apodo {
+    top: -500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 2px blue;
+  }
+  .col-md-8 .card-body {
+    width: 520px;
+    height: 160px;
+    margin: auto;
   }
 }
 p {
@@ -259,6 +311,14 @@ p {
 .font-Verdana {
   font-family: "Verdana", sans-serif;
   font-size: 16px;
+}
+
+.card-img-top {
+  position: relative;
+}
+
+footer h5 {
+  color: aliceblue;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contactanos para poder intercambiar opiniones e ideas de nuestra gran pasion, los videojuegos">
+    <meta name="description"
+        content="Contactanos para poder intercambiar opiniones e ideas de nuestra gran pasion, los videojuegos">
     <meta name="keywords" content="contacto, evento, opinion, discusion, social">
     <link rel="shortcut icon" href="../Images/aspeb-logo-black-simple.jpg" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
@@ -16,7 +17,8 @@
 
 <body id="contactos__page">
     <header>
-        <a href="../index.html"> <img id="banner" class="img-fluid" src="../images/banner800x100_final.jpg" alt="Banner del sitio">
+        <a href="../index.html"> <img id="banner" class="img-fluid" src="../images/banner800x100_final.jpg"
+                alt="Banner del sitio">
         </a>
     </header>
 
@@ -42,73 +44,44 @@
         </div>
     </nav>
 
-<section id="contacto">
-    
-        <div class="contact_form">
-      
-          <div class="formulario">
-            <h1>Formulario de contacto</h1>
-            <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
-      
-            <form action="submeter-formulario.php" method="post">
-      
-              <p>
-                <label for="nombre" class="colocar_nombre">Nombre
-                  <span class="obligatorio">*</span>
-                </label>
-                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-              </p>
-      
-              <p>
-                <label for="email" class="colocar_email">Email
-                  <span class="obligatorio">*</span>
-                </label>
-                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-              </p>
-      
-              <p>
-                <label for="telefone" class="colocar_telefono">Teléfono
-                </label>
-                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-              </p>
-      
-              <p>
-                <label for="website" class="colocar_website">Sitio web
-                </label>
-                <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
-              </p>
-      
-              <p>
-                <label for="asunto" class="colocar_asunto">Asunto
-                  <span class="obligatorio">*</span>
-                </label>
-                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-              </p>
-      
-              <p>
-                <label for="mensaje" class="colocar_mensaje">Mensaje
-                  <span class="obligatorio">*</span>
-                </label>
-                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
-              </p>
-      
-              <button type="submit" name="enviar_formulario" id="enviar">
-                <p>Enviar</p>
-              </button>
-      
-              <p class="aviso">
-                <span class="obligatorio"> * </span>los campos son obligatorios.
-              </p>
-      
-            </form>
-          </div>
+    <section id="contacto">
+        <div>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" id="nombre">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <br>
+                <label for="Plataforma">Videojuego de preferencia</label>
+                <select name="Plataforma" id="Plataforma">
+                    <option value="1">Age of Empires 2 DE</option>
+                    <option value="2">Left 4 dead 2</option>
+                    <option value="3">overwatch 2</option>
+                    <option value="4">Pay day 2</option>
+                    <option value="5">PUBG</option>
+                    <option value="6">Warzone 2</option>
+                </select>
+                <br>
+                <label for="comentario">Dejenos su comentario!</label>
+                <textarea name="comentario" id="comentario" cols="50" rows="5"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+                <br>
+                <input type="reset" value="Borrar">
+            </fieldset>
+
+        <br>
+        <iframe class="maps"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d105105.256578797!2d-58.39867643088379!3d-34.59052275829962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1675970014370!5m2!1ses-419!2sar"
+            width="540" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-      
-     
-</section>
+    </section>
 
 
-    
+
 
 
 
