@@ -11,6 +11,7 @@ html body {
   background-color: rgb(20, 3, 46);
   margin: 0 auto;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 html {
@@ -27,27 +28,27 @@ header {
 #Destacados {
   background-color: rgb(20, 3, 46);
   grid-area: section-1;
-  padding: 10px;
+  padding: 1px;
 }
 
 section {
   background-color: rgb(20, 3, 46);
   grid-area: section-2;
-  margin: 5px;
+  margin: 1px;
 }
 
 aside {
   background-color: rgb(20, 3, 46);
   grid-area: aside;
-  padding: 10px;
-  margin-right: 5px;
+  padding: 1px;
+  margin-right: 1px;
 }
 
 footer {
   background-color: rgb(20, 3, 45);
   grid-area: footer;
   text-align: center;
-  margin: 5px;
+  margin: 0px;
 }
 
 button {
@@ -74,10 +75,6 @@ li {
   list-style-type: none;
 }
 
-#radio {
-  align-items: center;
-}
-
 #Navbar {
   z-index: 1;
   margin: 1px auto;
@@ -93,9 +90,12 @@ li {
 }
 
 #contacto {
-  width: 600px;
+  width: 80%;
   height: auto;
-  margin: 30px auto;
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
   padding-top: 30px;
   padding-bottom: 20px;
@@ -104,7 +104,7 @@ li {
 }
 #contacto select {
   background-color: #fbfbfb;
-  width: 408px;
+  width: 200px;
   height: 40px;
   border-radius: 5px;
   border-style: solid;
@@ -116,7 +116,7 @@ li {
 }
 #contacto input {
   background-color: #fbfbfb;
-  width: 408px;
+  width: 200px;
   height: 40px;
   border-radius: 5px;
   border-style: solid;
@@ -128,7 +128,7 @@ li {
 }
 #contacto textarea {
   background-color: #fbfbfb;
-  width: 405px;
+  width: 200px;
   height: 150px;
   border-radius: 5px;
   border-style: solid;
@@ -140,22 +140,9 @@ li {
   padding-top: 15px;
 }
 #contacto label {
-  display: block;
+  display: flex;
   float: center;
-}
-#contacto button {
-  height: 45px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  background-color: #ab4493;
-  border-color: #ab4493;
-  border-style: solid;
-  border-radius: 10px;
-  width: 420px;
-  cursor: pointer;
+  background-color: white;
 }
 #contacto button p {
   color: #fff;
@@ -209,6 +196,26 @@ li {
   border-color: #ab4493;
 }
 
+#videojuegos .card:hover {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #aada27;
+  -webkit-box-shadow: 0px 0px 15px 15px #b0e421;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transition: all 1.5s;
+}
+
+#integrantes .card:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.row {
+  width: auto;
+}
+
 body {
   display: grid;
   flex-direction: row;
@@ -218,7 +225,7 @@ body {
 body {
   display: grid;
   grid-template-areas: "header" "nav" "section-1" "aside" "section-2" "footer";
-  grid-template-columns: auto;
+  grid-template-columns: 298px;
   grid-template-rows: 100px 75px auto auto auto auto;
   row-gap: 5px;
   column-gap: 5px;
@@ -232,15 +239,18 @@ body header {
   background-color: rgb(20, 3, 46);
 }
 body nav {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(116, 10, 110);
 }
 
 @media screen and (min-width: 768px) {
   body {
     grid-template-areas: "header" "nav" "section-1" "aside" "section-2" "footer";
-    grid-template-columns: auto;
+    grid-template-columns: 746px;
     grid-template-rows: 100px 75px auto auto auto auto;
     row-gap: 10px;
     column-gap: 10px;
@@ -272,8 +282,8 @@ body nav {
     grid-template-areas: "header header" "nav nav" "section-1  aside" "section-2  section-2" "footer     footer";
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 100px 75px auto auto auto;
-    row-gap: 20px;
-    column-gap: 20px;
+    row-gap: 10px;
+    column-gap: 15px;
   }
   body header {
     background-color: rgb(255, 255, 255);

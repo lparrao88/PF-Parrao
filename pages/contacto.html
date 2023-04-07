@@ -15,14 +15,14 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
-<body id="contactos__page">
+<body id="contactos-page">
     <header>
         <a href="../index.html"> <img id="banner" class="img-fluid" src="../images/banner800x100_final.jpg"
                 alt="Banner del sitio">
         </a>
     </header>
 
-    <nav id="Navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id="Navbar" class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,40 +44,36 @@
         </div>
     </nav>
 
-    <section id="contacto">
-        <div>
-            <fieldset>
-                <legend>Datos de contacto</legend>
-                <label for="nombre">Nombre y Apellido</label>
-                <input type="text" id="nombre">
-                <br>
-                <label for="email">Email</label>
-                <input type="email" id="email">
-                <br>
-                <label for="Plataforma">Videojuego de preferencia</label>
-                <select name="Plataforma" id="Plataforma">
-                    <option value="1">Age of Empires 2 DE</option>
-                    <option value="2">Left 4 dead 2</option>
-                    <option value="3">overwatch 2</option>
-                    <option value="4">Pay day 2</option>
-                    <option value="5">PUBG</option>
-                    <option value="6">Warzone 2</option>
-                </select>
-                <br>
-                <label for="comentario">Dejenos su comentario!</label>
-                <textarea name="comentario" id="comentario" cols="50" rows="5"></textarea>
-                <br>
-                <input type="submit" value="Enviar">
-                <br>
-                <input type="reset" value="Borrar">
-            </fieldset>
 
-        <br>
-        <iframe class="maps"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d105105.256578797!2d-58.39867643088379!3d-34.59052275829962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1675970014370!5m2!1ses-419!2sar"
-            width="540" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section id="contacto">
+        <div class="mb-3">
+            <legend>Datos de contacto</legend>
+            <label for="nombre">Nombre y Apellido</label>
+            <input type="text" id="nombre">
+            <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <label for="Plataforma">Videojuego de preferencia</label>
+            <select name="Plataforma" id="Plataforma">
+                <option value="1">Age of Empires 2 DE</option>
+                <option value="2">Left 4 dead 2</option>
+                <option value="3">overwatch 2</option>
+                <option value="4">Pay day 2</option>
+                <option value="5">PUBG</option>
+                <option value="6">Warzone 2</option>
+            </select>
         </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje!</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+            
+            <input type="reset" value="Borrar">
+
+
+            
+            
+        
     </section>
 
 
@@ -86,20 +82,15 @@
 
 
 
-    <div class="redes">
-        <ul>
-            <li><a href="https://www.facebook.com/Aspeb" target="_blank" id="facebook"><img width="50"
-                        src="../images/facebook.svg" alt="Logo de facebook"></a></li>
-            <li><a href="https://www.instagram.com/aspebgram/?hl=es-la" target="_blank" id="instagram"><img width="50"
-                        src="../images/instagram.svg" alt="Logo de instagram"></a></li>
-            <li><a href="https://twitter.com/ASPEBradio" target="_blank" id="twitter"><img width="50"
-                        src="../images/twitter.svg" alt="Logo de twitter"></a></li>
-        </ul>
-    </div>
-
-
     <footer class="Copy">
-        <h5>Todos los derechos reservados 2023</h5>
+        <h5>Todos los derechos reservados 2023
+            <a href="https://www.facebook.com/Aspeb" target="_blank" id="facebook"><img width="50"
+                    src="../images/facebook.svg" alt="Logo de facebook"></a>
+            <a href="https://www.instagram.com/aspebgram/?hl=es-la" target="_blank" id="instagram"><img width="50"
+                    src="../images/instagram.svg" alt="Logo de instagram"></a>
+            <a href="https://twitter.com/ASPEBradio" target="_blank" id="twitter"><img width="50"
+                    src="../images/twitter.svg" alt="Logo de twitter"></a>
+        </h5>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

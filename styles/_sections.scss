@@ -11,6 +11,7 @@ html body {
     background-color: rgb(20, 3, 46);
     margin: 0 auto;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 html {
@@ -27,28 +28,28 @@ header {
 #Destacados {
     background-color: rgb(20, 3, 46);
     grid-area: section-1;
-    padding: 10px;
+    padding: 1px;
 
 }
 
 section {
     background-color: rgb(20, 3, 46);
     grid-area: section-2;
-    margin: 5px;
+    margin: 1px;
 }
 
 aside {
     background-color: rgb(20, 3, 46);
     grid-area: aside;
-    padding: 10px;
-    margin-right: 5px;
+    padding: 1px;
+    margin-right: 1px;
 }
 
 footer {
     background-color: rgb(20, 3, 45);
     grid-area: footer;
     text-align: center;
-    margin: 5px;
+    margin: 0px;
 
 }
 
@@ -80,16 +81,11 @@ li {
     list-style-type: none;
 }
 
-#radio {
-    align-items: center;
-}
 
 #Navbar {
     z-index: 1;
     margin: 1px auto;
     position: relative;
-
-
 }
 
 .card-header {
@@ -101,9 +97,12 @@ li {
 }
 
 #contacto {
-    width: 600px;
+    width: 80%;
     height: auto;
-    margin: 30px auto;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 20px;
@@ -113,7 +112,7 @@ li {
 
     select {
         background-color: #fbfbfb;
-        width: 408px;
+        width: 200px;
         height: 40px;
         border-radius: 5px;
         border-style: solid;
@@ -126,7 +125,7 @@ li {
 
     input {
         background-color: #fbfbfb;
-        width: 408px;
+        width: 200px;
         height: 40px;
         border-radius: 5px;
         border-style: solid;
@@ -140,7 +139,7 @@ li {
 
     textarea {
         background-color: #fbfbfb;
-        width: 405px;
+        width: 200px;
         height: 150px;
         border-radius: 5px;
         border-style: solid;
@@ -154,25 +153,12 @@ li {
 
 
     label {
-        display: block;
+        display: flex;
         float: center;
+        background-color: white;
     }
 
 
-    button {
-        height: 45px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        text-transform: uppercase;
-        background-color: #ab4493;
-        border-color: #ab4493;
-        border-style: solid;
-        border-radius: 10px;
-        width: 420px;
-        cursor: pointer;
-    }
 
 
     button p {
@@ -248,5 +234,24 @@ li {
     border-style: solid;
     border-width: 1px;
     border-color: #ab4493;
+}
+
+#videojuegos .card:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #aada27;
+    -webkit-box-shadow: 0px 0px 15px 15px #b0e421;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transition: all 1.5s ;
+    }
+
+#integrantes .card:hover {
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+    z-index: 2;
+}
+
+.row {
+    width: auto;
 }
 
