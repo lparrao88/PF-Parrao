@@ -35,27 +35,22 @@ header {
 section {
     background-color: rgb(255, 255, 255);
     grid-area: section-2;
+    margin: 5px;
 }
 
 aside {
     background-color: rgb(255, 255, 255);
     grid-area: aside;
     position: relative;
-    transition: all .5s;
-}
-
-aside:hover {
-    height: 300px;
-    width: 300px;
-    padding: 20px;
-    background-color: black;
-
+    padding: 10px;
+    margin-right: 5px;
 }
 
 footer {
     background-color: white;
     grid-area: footer;
     text-align: center;
+    margin: 5px;
 }
 
 button {
@@ -108,37 +103,4 @@ li {
 
 .btn-primary {
     background: radial-gradient(ellipse 20px 10px, rgb(250, 245, 245), rgb(24, 155, 79));
-}
-
-#videojuegos section {
-    .warzone {
-        background-color: aliceblue;
-        grid-area: div;
-    }
-
-    .pubg {
-        background-color: aliceblue;
-        grid-area: div;
-    }
-
-    .overwatch {
-        background-color: aliceblue;
-        grid-area: div;
-    }
-
-    .left4dead2 {
-        background-color: aliceblue;
-        grid-area: div;
-    }
-
-    .payday2 {
-        background-color: aliceblue;
-        grid-area: div;
-    }
-
-    .ageofempires2 {
-        background-color: aliceblue;
-        grid-area: div;
-    }
-    
 }
